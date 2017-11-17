@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Minh Vu hoc Jquery</title>
+	<script>
+		function tinh(){
+			// Lay ra gia tri cua 2 so nhap vao
+			var a = document.getElementById("numberA").value * 1;
+			var b = document.getElementById("numberB").value * 1;
+
+			// Tinh toan tong, hieu, tich, thuong
+			var ketqua = (a + b);
+			var tong = a + b;
+			var hieu = a - b;
+			var tich = a * b;
+			var thuong = a / b;
+
+			// Gan du lieu tinh toan vao cac o hien thi
+			document.getElementById("tong").value = tong;
+			document.getElementById("hieu").value = hieu;
+			document.getElementById("tich").value = tich;
+			document.getElementById("thuong").value = thuong;
+		}
+	</script>
+	
+	<style>
+		div{
+			width:300px;
+			margin: 20px;
+			border: 1px solid black;
+		}
+
+		button{
+			background-color: black;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div>Số A: <input id="numberA" type='text'></div>
+	<div>Số B: <input id="numberB" type='text'></div>
+	<div>
+		<button onclick="tinh()">tinh</button>
+	</div>
+	<div>Tong: <input id="tong" type='text'></div>
+	<div>Hieu: <input id="hieu" type='text'></div>
+	<div>Tich: <input id="tich" type='text'></div>
+	<div>Thuong: <input id="thuong" type='text'></div>
+</body>
+</html>
